@@ -15,10 +15,12 @@ public class ListenerImplimentation  implements ITestListener {
 	ExtentReports extent;
 	ExtentTest test;
 	public void onStart(ITestContext context) {
+		//i will configure the report and attach the configuration 
 		 spark=new ExtentSparkReporter("./extent.html");
 		 spark.config().setTheme(Theme.STANDARD);
 		 spark.config().setDocumentTitle("ProjectReport");
 		 spark.config().setReportName("extentReports");
+		 
 		 extent=new ExtentReports();
 		 extent.attachReporter(spark);
 		 extent.setSystemInfo("osName", System.getProperty("os.name"));
@@ -34,7 +36,7 @@ public class ListenerImplimentation  implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, result.getMethod().getMethodName());
+		test.log(Status.PASS, result.getMethod().getMethodName()+ "is passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -46,7 +48,8 @@ public class ListenerImplimentation  implements ITestListener {
 			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"+driver);
 			w.captureScreenshot(driver, result.getMethod().getMethodName());
 			test.addScreenCaptureFromPath(w.captureScreenshot(driver, result.getMethod().getMethodName()));
-			test.log(Status.FAIL, result.getMethod().getMethodName());
+			
+			test.log(Status.FAIL, result.getMethod().getMethodName()+ " is failed");
 			test.log(Status.FAIL, result.getThrowable());
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block

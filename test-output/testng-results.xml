@@ -2,62 +2,24 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-18T23:19:09 IST" name="Default suite" finished-at="2021-12-18T23:19:16 IST" duration-ms="6455">
+  <suite started-at="2022-02-10T13:20:37 IST" name="Default suite" finished-at="2022-02-10T13:20:46 IST" duration-ms="8756">
     <groups>
     </groups>
-    <test started-at="2021-12-18T23:19:09 IST" name="Default test" finished-at="2021-12-18T23:19:16 IST" duration-ms="6455">
-      <class name="prcatice.Demo">
-        <test-method signature="demo1()[pri:0, instance:prcatice.Demo@57d7f8ca]" started-at="2021-12-18T23:19:10 IST" name="demo1" finished-at="2021-12-18T23:19:10 IST" duration-ms="13" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[intentional skip]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: intentional skip
-at prcatice.Demo.demo1(Demo.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+    <test started-at="2022-02-10T13:20:37 IST" name="Default test" finished-at="2022-02-10T13:20:46 IST" duration-ms="8756">
+      <class name="extent.DemoExtent">
+        <test-method signature="tc01()[pri:0, instance:extent.DemoExtent@383bfa16]" started-at="2022-02-10T13:20:37 IST" name="tc01" finished-at="2022-02-10T13:20:37 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method signature="demo2()[pri:0, instance:prcatice.Demo@57d7f8ca]" started-at="2021-12-18T23:19:10 IST" name="demo2" finished-at="2021-12-18T23:19:15 IST" duration-ms="5535" status="FAIL">
+        </test-method> <!-- tc01 -->
+        <test-method signature="tc02()[pri:0, instance:extent.DemoExtent@383bfa16]" started-at="2022-02-10T13:20:37 IST" name="tc02" finished-at="2022-02-10T13:20:44 IST" duration-ms="6922" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[intentionalFail]]>
+              <![CDATA[intentional fail]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: intentionalFail
+              <![CDATA[java.lang.AssertionError: intentional fail
 at org.testng.Assert.fail(Assert.java:99)
-at prcatice.Demo.demo2(Demo.java:30)
+at extent.DemoExtent.tc02(DemoExtent.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,12 +53,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo2 -->
-        <test-method signature="demo3()[pri:0, instance:prcatice.Demo@57d7f8ca]" started-at="2021-12-18T23:19:16 IST" name="demo3" finished-at="2021-12-18T23:19:16 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- tc02 -->
+        <test-method signature="tc03()[pri:0, instance:extent.DemoExtent@383bfa16]" started-at="2022-02-10T13:20:46 IST" name="tc03" finished-at="2022-02-10T13:20:46 IST" duration-ms="4" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[intentional skip]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: intentional skip
+at extent.DemoExtent.tc03(DemoExtent.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo3 -->
-      </class> <!-- prcatice.Demo -->
+        </test-method> <!-- tc03 -->
+      </class> <!-- extent.DemoExtent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
